@@ -44,3 +44,42 @@ var stringTwo = 19
 
 let resultStirngFourth = stringOne + String(stringTwo)
 print(resultStirngFourth)
+
+//Task 2 (Продвинутый уровень)
+
+
+let cityFirst = "Montreal"
+let citySecond = "Venice"
+let cityThird = "Rotterdam"
+let cityFourth = "Shanghai"
+let cityFifth = "Kazan"
+let countryFirst =  "Italy"
+let countrySecond = "Netherlands"
+let countryThird =  "China"
+let countryFourth = "Russia"
+let countryFifth =  "Canada"
+
+let letterOne = "a"
+let cities = [cityFirst,citySecond,cityThird,cityThird,cityFifth]
+let countries = [cityFirst,citySecond,cityThird,cityFourth,cityFifth]
+
+for i in cities {
+    if i.contains(letterOne) {
+        print(i)
+        print("Содержит букву а")
+    }
+}
+
+for i in countries {
+    if i.contains(letterOne) {
+        print(i)
+        print("Содержит букву а")
+    }
+}
+
+let сyrillicString = "ариватовлаимвтквиалдвм"
+var сyrillicStringUp = сyrillicString.uppercased()
+
+print(сyrillicStringUp)
+
+
