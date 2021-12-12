@@ -9,73 +9,38 @@ import Foundation
 
 // Task 1.1
 
-let intType: Int
-let uIntType: UInt
-let floattype: Float
-let doubletype: Double
-let stringtype: String
+let name = "Евгений"
+let surName = "Колесниов"
+let age = "25"
+let adress = "Комарова 5а"
+let hobby = "Swift"
 
-var varIntType = Int.max
-var varUIntType = UInt.max
-var varFloattype: Float
-var varDoubletype: Double
-var varStringtype: String
+let resultStringFirst = name + surName + age + adress + hobby
+let resultStringSecond = "Меня зовут \(surName) \(name), возраст \(age), \(adress), \(hobby)"
 
-print(varIntType)
-print(varUIntType)
+print(resultStringFirst)
+print(resultStringSecond)
 
-// Task 1.2
+let firstString = "Значимость этих проблем настолько очевидна, что новая модель "
+let secondString = "организационной деятельности способствует повышению актуальности дальнейших "
+let thirdString = "направлений развития проекта. "
+let fourthString = "Не следует, однако, забывать о том, что консультация с профессионалами из IT "
+let fifthString = "способствует подготовке и реализации системы "
+let sixthString = "масштабного изменения ряда параметров! "
+let seventhSting = "Разнообразный и богатый опыт реализация "
+let eightSting = "намеченного плана развития требует "
+let ninethString = "от нас системного анализа "
+let tenthString = "направлений прогрессивного развития."
 
-let bread = 2
-let apple = 3
-let orange = 4
+let resultStringThird = "\(firstString)\(secondString)\(thirdString)\n\(fourthString)\t\(fifthString)\(sixthString)\(seventhSting)\(eightSting)\(ninethString)\(tenthString)"
+print(resultStringThird)
 
-// Task 1.3
-
-let a: Double = 0.3
-let b: Float = 152.435
-let aInt = Int(a)
-let bUInt = UInt(b)
-
-//Task 1.4 - 1.5
-
-print("Введите первую переменную")
-let checkFirstVariable: String? = readLine()
-var firstVariable = String()
-if let correctFirstVariable = checkFirstVariable {
-    firstVariable = correctFirstVariable
-    print("Первое значение\(firstVariable)")
-} else {
-    print("Ошибка! Введите числовое значение!")
+for letter in name {
+    print(letter)
 }
 
-print("Введите вторую переменную")
-let checkSekocndVariable: String? = readLine()
-var sekocndVariable = String()
-if let correctSekocndVariable = checkSekocndVariable {
-    sekocndVariable = correctSekocndVariable
-    print("Первое значение\(sekocndVariable)")
-} else {
-    print("Ошибка! Введите числовое значение!")
-}
+var stringOne = "Covid"
+var stringTwo = 19
 
-var firstVariableDouble: Double = 0
-if let firstVariableCheckDouble = Double(firstVariable){
-    firstVariableDouble = firstVariableCheckDouble
-}
-
-var sekocndVariableDouble: Double = 0
-if let sekocndVariableCheckDouble = Double(sekocndVariable){
-    sekocndVariableDouble = sekocndVariableCheckDouble
-}
-
-let summa = firstVariableDouble + sekocndVariableDouble
-let difference = firstVariableDouble - sekocndVariableDouble
-let multiplication = firstVariableDouble * sekocndVariableDouble
-let division = firstVariableDouble / sekocndVariableDouble
-
-print("Сумма \(firstVariableDouble) + \(sekocndVariableDouble) = \(summa)")
-print("Разница \(firstVariableDouble) - \(sekocndVariableDouble) = \(difference)")
-print("Умножение \(firstVariableDouble) * \(sekocndVariableDouble) = \(multiplication)")
-print("Деление \(firstVariableDouble) / \(sekocndVariableDouble) = \(division)")
-
+let resultStirngFourth = stringOne + String(stringTwo)
+print(resultStirngFourth)
